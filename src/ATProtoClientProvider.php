@@ -10,6 +10,7 @@ use Aazsamir\Libphpsky\Client\ATProtoClientInterface;
 use Aazsamir\Libphpsky\Client\Session\DecoratedSessionStore;
 use Aazsamir\Libphpsky\Client\Session\MemorySessionStore;
 use Aazsamir\Libphpsky\Client\Session\PsrCacheSessionStore;
+use Aazsamir\Libphpsky\Model\Meta\ATProtoMetaClient;
 use Illuminate\Support\Facades\App;
 
 class ATProtoClientProvider extends \Illuminate\Support\ServiceProvider
@@ -28,9 +29,13 @@ class ATProtoClientProvider extends \Illuminate\Support\ServiceProvider
                 )
             )->useQueryCache(false);
 
-            return $builder->build();
+            return new ATProtoClient($builder->build());
         });
 
-        $this->app->alias(ATProtoClient::class, ATProtoClientInterface::class);
+        $this->app->alias(ATProtoClientInterface::class, ATProtoClient::class);
+
+        $this->app->singleton(ATProtoMetaClient::class, function ($app) {
+            return new ATProtoMetaClient($app->make(ATProtoClientInterface::class));
+        });
     }
 }
