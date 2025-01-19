@@ -16,9 +16,8 @@
     ],
     "require": {
         "illuminate/support": "^11.38",
-        "aazsamir/libphpsky": "dev-main"
+        "aazsamir/libphpsky": "^0.2.0"
     },
-    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
