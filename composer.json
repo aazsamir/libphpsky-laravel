@@ -1,0 +1,29 @@
+{
+    "name": "aazsamir/libphpsky-laravel",
+    "description": "Recipe for Libphpsky in Laravel framework",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aazsamir\\LibphpskyLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aazsamir",
+            "email": "sutikkukun@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^11.38",
+        "aazsamir/libphpsky": "^0.1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aazsamir\\LibphpskyLaravel\\ATProtoClientProvider",
+                "Aazsamir\\LibphpskyLaravel\\ATProtoMetaClientProvider"
+            ]
+        }
+    }
+}
