@@ -21,8 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aazsamir\\LibphpskyLaravel\\ATProtoClientProvider",
-                "Aazsamir\\LibphpskyLaravel\\ATProtoMetaClientProvider"
+                "Aazsamir\\LibphpskyLaravel\\ATProtoClientProvider"
             ]
         }
     }
