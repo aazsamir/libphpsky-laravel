@@ -16,7 +16,7 @@
     ],
     "require": {
         "illuminate/support": "^11.38",
-        "aazsamir/libphpsky": "^0.1.0"
+        "aazsamir/libphpsky": "dev-main"
     },
     "minimum-stability": "dev",
     "extra": {

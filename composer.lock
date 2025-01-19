@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4854596cc271878bc3fd074ade5321c",
+    "content-hash": "f87b8347023071428f22cd7515ad0e5e",
     "packages": [
         {
             "name": "aazsamir/libphpsky",
-            "version": "v0.1.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aazsamir/libphpsky.git",
-                "reference": "632aef50101a6c2440d385ecec19f1d4278b1c41"
+                "reference": "0c40de507c417d0704353bb7fe83e28a8a26287d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aazsamir/libphpsky/zipball/632aef50101a6c2440d385ecec19f1d4278b1c41",
-                "reference": "632aef50101a6c2440d385ecec19f1d4278b1c41",
+                "url": "https://api.github.com/repos/aazsamir/libphpsky/zipball/0c40de507c417d0704353bb7fe83e28a8a26287d",
+                "reference": "0c40de507c417d0704353bb7fe83e28a8a26287d",
                 "shasum": ""
             },
             "require": {
@@ -35,6 +35,7 @@
                 "phpunit/phpunit": "^11.5",
                 "symfony/var-dumper": "^7.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -54,9 +55,9 @@
             "description": "PHP library for interacting with ATProto protocol",
             "support": {
                 "issues": "https://github.com/aazsamir/libphpsky/issues",
-                "source": "https://github.com/aazsamir/libphpsky/tree/v0.1.1"
+                "source": "https://github.com/aazsamir/libphpsky/tree/main"
             },
-            "time": "2025-01-19T15:53:28+00:00"
+            "time": "2025-01-19T16:14:18+00:00"
         },
         {
             "name": "amphp/amp",
