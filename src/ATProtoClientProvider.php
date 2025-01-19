@@ -37,5 +37,7 @@ class ATProtoClientProvider extends \Illuminate\Support\ServiceProvider
         $this->app->singleton(ATProtoMetaClient::class, function ($app) {
             return new ATProtoMetaClient($app->make(ATProtoClientInterface::class));
         });
+
+        ATProtoClientBuilder::setDefault($this->app->make(ATProtoClientInterface::class));
     }
 }
