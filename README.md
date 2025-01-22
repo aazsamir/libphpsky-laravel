@@ -28,7 +28,7 @@ class MyController extends Controller
     public function index()
     {
         // use ATProtoMetaClient
-        dd($this->metaClient->comAtprotoIdentityResolveHandle('bsky.app'));
+        dd($this->metaClient->comAtprotoIdentityResolveHandle()->query('bsky.app'));
         // or plain Libphpsky type
         dd($this->resolveHandle->query('bsky.app'));
         // or if you're not a fan of dependency injection
