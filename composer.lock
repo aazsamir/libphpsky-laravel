@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7471b7ea4cf199a85583c5cc29b6df10",
+    "content-hash": "e4dbfb86b1f19ad5c6943650d5336de2",
     "packages": [
         {
             "name": "aazsamir/libphpsky",

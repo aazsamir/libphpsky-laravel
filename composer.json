@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "illuminate/support": "^12.33",
-        "aazsamir/libphpsky": "^0.7.0"
+        "illuminate/support": "^11 || ^12",
+        "aazsamir/libphpsky": ">=0.7 <1.0"
     },
     "extra": {
         "laravel": {
